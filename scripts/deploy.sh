@@ -9,6 +9,8 @@ JAR_PATH=$REPOSITORY/build/libs/$JAR_NAME
 
 CURRENT_PID=$(pgrep -f $APP_NAME)
 
+sudo chmod +x /home/ec2-user/cicdproject/scripts/deploy.sh
+
 if [ -z $CURRENT_PID ]
 then
   echo "> 종료할것 없음."
